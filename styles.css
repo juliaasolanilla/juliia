@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Arial';
+    background: #111;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #000;
+}
+
+.logo {
+    width: 120px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('../img/hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+/* BOTONS */
+.btn {
+    background: orange;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff9900;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* TAULA */
+.tabla {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tabla td, .tabla th {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid img {
+    width: 120px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.2);
+}
+
+/* FAQ */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CONTACTE */
+.contact-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid orange;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
